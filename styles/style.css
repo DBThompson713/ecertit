@@ -1,0 +1,397 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scrollbar-face-color: #646464;
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
+}
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #646464;}}
+::-webkit-resizer { background-color: #666;}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  min-width: 1350px;
+}
+
+.button-main {
+  background: red;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* a:active,* a:hover {
+  link-styling: none;
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  font-size: 1.1em;
+  width: 100vw;
+}
+
+.nav-link {
+  color: #fff;
+  height: 1.1em;
+  margin: 0 10px;
+}
+
+.nav-link:target:before {
+  content: "";
+  display: block;
+  height: 40px; /* fixed header height*/
+  margin: -40px 0 0; /* negative fixed header height */
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.bg-nav {
+  background: black;
+  height: 65px;
+}
+
+.navbar-brand {
+  margin-left: 150px;
+}
+
+#nav-search {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#nav-search-button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  padding: 2px 12px;
+}
+
+.navbar {
+  color: white;
+  border-bottom: 2px solid #212121;
+}
+
+.login-btn {
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+  margin: 0 150px 0 100px;
+}
+
+/* MAIN SECTION */
+
+.jumbotron {
+  text-align: center;
+  color: #fff;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1404931/laptop%20on%20black-f1.jpg")no-repeat
+    center center fixed;
+  font-size: 1.12em;
+  height: 101vh;
+  min-height: 800px;
+}
+
+.jumbotron br {
+  height: 40px;
+}
+
+.main-jumbo {
+}
+
+#main-headline {
+  margin: 120px auto 20px auto;
+  font-size: 4em;
+}
+
+.red {
+  color: red;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+  font-size: 1.2em;
+}
+
+.contact-button {
+  margin-top: 30px;
+  background: red;
+  color: #fff;
+  height: 50px;
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-button a {
+  color: #fff;
+}
+
+.contact-button a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* COURSES SECTION */
+
+#courses {
+  height: 580px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1404931/laptop%20on%20white.jpeg")
+    no-repeat center center fixed;
+  background-size: cover;
+  margin-top: -35px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#courses h1 {
+  margin-top: 35px;
+  margin-bottom: -20px;
+}
+
+#courses h2 {
+  margin-top: 10px;
+}
+
+.vendors-btn {
+  margin-top: 20px;
+  font-size: 1.05em;
+  background: red;
+  padding: 15px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.vendors-btn a {
+  color: #fff;
+  
+}
+
+.vendors-btn a:hover{
+  text-decoration: none;
+  link-styling: none;
+  color:#fff;
+}
+
+.vendor-row1{
+  overflow: hidden;
+}
+
+vendor-row2{
+  overflow: hidden;
+}
+
+.badge img {
+  height: 80px;
+  width: 160px;
+  margin-left: 45px;
+  margin-top: 45px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.microsoftBadge img {
+  height: 100px;
+  width: 170px;
+}
+
+.comptiaBadge img{
+  height: 150px;
+}
+
+.iscBadge img{
+  height: 50px;
+}
+
+.prince2Badge img{
+  height: 160px;
+}
+
+/* FEATURES SECTION */
+
+#features-band {
+  height: 300px;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  line-height: 1;
+}
+
+#features-band img {
+  height: 200px;
+  float: right;
+  display: inline-block;
+}
+
+#features-band h2 {
+  color: red;
+  margin: 20px auto;
+}
+
+.features-desc {
+  float: left;
+}
+
+.features-desc li {
+  margin-left: 40px;
+}
+
+/* CORP OR IND SECTION */
+
+#corp-ind {
+  height: 550px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1404931/laptop%20in%20use.jpeg")no-repeat
+      center center fixed;
+  text-align: center;
+}
+
+#corp-ind h1 {
+  padding-top: 30px;
+}
+
+.corp-ind-box {
+  margin: 10px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.84);
+  border-radius: 7px;
+  width: 85%;
+  height: 350px;
+  margin: 40px auto;
+}
+
+#corp-ind button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* DEMO SECTION */
+
+.demo-band {
+  padding-top: 20px;
+  height: 300px;
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.demo-band button {
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 1.1em;
+}
+
+/* CONTACT US SECTION */
+
+#contact-us {
+  height: 385px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")no-repeat
+      center center fixed;
+  text-align: center;
+}
+
+#contact-us h2 {
+  padding-top: 20px;
+  margin: 20px auto;
+}
+
+.contactform {
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.59);
+  width: 40%;
+}
+
+.contactfield {
+  width: 75%;
+  height: 25px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+contactfield:focus {
+  outline: 1px solid red;
+}
+
+.textfield {
+  height: 50px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background: #212121;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-logo{
+  margin-top: 40px;
+}
+
+.footer-left {
+  margin-left: 15%;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.footer-main {
+  padding: 15px auto;
+}
+.footer-nav,
+.footer-company,
+.footer-support {
+  margin: auto 15px;
+  color: #FF0000;
+}
+
+.copyright {
+  margin: 10px auto;
+}
